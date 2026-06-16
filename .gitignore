@@ -1,0 +1,11 @@
+/.update-logs/
+/.claude/
+/CLAUDE.md
+/.mcp-*
+
+# Dark Factory
+/.dark-factory.lock
+/.dark-factory.log
+/prompts/log
+/specs/log
+.mcp-auth/
