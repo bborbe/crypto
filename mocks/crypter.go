@@ -5,7 +5,7 @@ import (
 	"context"
 	"sync"
 
-	crypto "github.com/bborbe/crypto"
+	"github.com/bborbe/crypto"
 )
 
 type Crypter struct {
