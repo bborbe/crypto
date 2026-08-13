@@ -62,7 +62,17 @@ func (c *crypter) Decrypt(ctx context.Context, value []byte) ([]byte, error) {
 
 	// Since we know the ciphertext is actually nonce+ciphertext
 	// And len(nonce) == NonceSize(). We can separate the two.
+	// The length check is required: value is caller-supplied and may be
+	// truncated or corrupt, and slicing it blind panics rather than erroring.
 	nonceSize := gcm.NonceSize()
+	if len(value) < nonceSize {
+		return nil, errors.Errorf(
+			ctx,
+			"value too short: got %d bytes, need at least %d",
+			len(value),
+			nonceSize,
+		)
+	}
 	nonce, ciphertext := value[:nonceSize], value[nonceSize:]
 
 	plaintext, err := gcm.Open(nil, nonce, ciphertext, nil)

@@ -8,6 +8,12 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- fix: Decrypt returns an error instead of panicking when the value is shorter than the GCM nonce
+- add regression specs for short and empty Decrypt input
+- docs: add License section to README
+
 ## v1.0.3
 
 - Bump `golang.org/x/text` to v0.39.0 (CVE-2026-56852)
