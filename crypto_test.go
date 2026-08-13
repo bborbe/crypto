@@ -28,6 +28,28 @@ var _ = Describe("Crypter", func() {
 		_, err = crypter.Encrypt(ctx, []byte("hello world"))
 		Expect(err).NotTo(BeNil())
 	})
+	It("value shorter than the nonce returns an error instead of panicking", func() {
+		// openssl rand -hex 32
+		key, err := hex.DecodeString(
+			"7630d82b45d30339fd687fd9e607700eb53fd4fe33af85f2349531f7f78cb67d",
+		)
+		Expect(err).To(BeNil())
+		crypter := crypto.NewCrypter(key)
+		// GCM's nonce is 12 bytes; anything shorter used to slice out of range.
+		_, err = crypter.Decrypt(ctx, []byte("short"))
+		Expect(err).NotTo(BeNil())
+		Expect(err.Error()).To(ContainSubstring("value too short"))
+	})
+	It("empty value returns an error instead of panicking", func() {
+		// openssl rand -hex 32
+		key, err := hex.DecodeString(
+			"7630d82b45d30339fd687fd9e607700eb53fd4fe33af85f2349531f7f78cb67d",
+		)
+		Expect(err).To(BeNil())
+		crypter := crypto.NewCrypter(key)
+		_, err = crypter.Decrypt(ctx, nil)
+		Expect(err).NotTo(BeNil())
+	})
 	It("16 bit", func() {
 		var err error
 		// openssl rand -hex 16
