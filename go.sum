@@ -1,7 +1,7 @@
 github.com/Masterminds/semver/v3 v3.5.0 h1:kQceYJfbupGfZOKZQg0kou0DgAKhzDg2NZPAwZ/2OOE=
 github.com/Masterminds/semver/v3 v3.5.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
-github.com/bborbe/errors v1.5.17 h1:SVzGyLt5fGZ+1LPxzg/Iczu0vkK0tn+RibpNWvmIddE=
-github.com/bborbe/errors v1.5.17/go.mod h1:0qc+e4OU+F4LvmOaWtY4H524br2px5HiFqNzdKn0JgE=
+github.com/bborbe/errors v1.5.18 h1:Pja/RErgL47tSNQMRz3OAG0npGtDdlDqB2on/mcBTlo=
+github.com/bborbe/errors v1.5.18/go.mod h1:veQC2Mm6Dmw8RwM4qtSHW6B6mYugEloAu9jY96WMMY4=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc h1:U9qPSI2PIWSS1VwoXQT9A3Wy9MM3WgvqSxFWenqJduM=
 github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/gkampitakis/ciinfo v0.3.2 h1:JcuOPk8ZU7nZQjdUhctuhQofk7BGHuIy0c9Ez8BNhXs=
