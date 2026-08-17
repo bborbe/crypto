@@ -8,7 +8,7 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
-## Unreleased
+## v1.0.6
 
 - chore: Bump go toolchain to 1.26.6
 - fix: Bump golang.org/x/mod to v0.40.0 (CVE-2026-56864, CVE-2026-56865)
