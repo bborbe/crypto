@@ -8,6 +8,10 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 * MINOR version when you add functionality in a backwards-compatible manner, and
 * PATCH version when you make backwards-compatible bug fixes.
 
+## Unreleased
+
+- Update Go to 1.26.6 and update dependencies
+
 ## v1.0.4
 
 - fix: Decrypt returns an error instead of panicking when the value is shorter than the GCM nonce
