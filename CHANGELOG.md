@@ -13,6 +13,9 @@ Please choose versions by [Semantic Versioning](http://semver.org/).
 - Bump go toolchain to 1.26.6
 - Bump golang.org/x/mod to v0.40.0 (CVE-2026-56864, CVE-2026-56865)
 - Bump golang.org/x/net to v0.58.0, golang.org/x/sys to v0.47.0, golang.org/x/text to v0.41.0, golang.org/x/tools to v0.49.0
+## v1.0.5
+
+- Update Go to 1.26.6 and update dependencies
 
 ## v1.0.4
 
