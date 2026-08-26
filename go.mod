@@ -1,15 +1,15 @@
 module github.com/bborbe/crypto
 
-go 1.26.6
+go 1.27.0
 
 replace (
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.0
 )
 
 require (
-	github.com/bborbe/errors v1.5.18
+	github.com/bborbe/errors v1.5.21
 	github.com/golang/glog v1.2.5
-	github.com/onsi/ginkgo/v2 v2.32.0
+	github.com/onsi/ginkgo/v2 v2.32.1
 	github.com/onsi/gomega v1.42.1
 )
 
