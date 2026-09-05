@@ -1,6 +1,6 @@
 module github.com/bborbe/crypto
 
-go 1.27.0
+go 1.27.1
 
 replace (
 	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.0
