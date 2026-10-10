@@ -2,9 +2,7 @@ module github.com/bborbe/crypto
 
 go 1.27.2
 
-replace (
-	github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.0
-)
+replace github.com/opencontainers/runtime-spec => github.com/opencontainers/runtime-spec v1.2.0
 
 require (
 	github.com/bborbe/errors v1.6.1
@@ -31,6 +29,4 @@ require (
 	golang.org/x/tools v0.49.0 // indirect
 )
 
-exclude (
-	cloud.google.com/go v0.26.0
-)
+exclude cloud.google.com/go v0.26.0
